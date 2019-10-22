@@ -21,6 +21,18 @@ typedef struct
 
   GtkWidget *button_1;  //the 1 button
   GtkWidget *button_2;  //the 2 button
+  GtkWidget *button_3;
+  GtkWidget *button_4;
+  GtkWidget *button_5;
+  GtkWidget *button_6;
+  GtkWidget *button_7;
+  GtkWidget *button_8;
+  GtkWidget *button_9;
+  GtkWidget *button_0;
+  GtkWidget *button_sub;
+  GtkWidget *button_mult;
+  GtkWidget *button_div;
+  GtkWidget *button_equal;
   GtkWidget *button_pl;  //the + button
 
   GtkWidget *button_exit;  //the exit button

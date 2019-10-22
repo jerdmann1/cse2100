@@ -11,6 +11,17 @@ void ObtainGuiWidgets(GtkBuilder *p_builder)
   GuiappGET(label_result);
   GuiappGET(button_1);
   GuiappGET(button_2);
+  GuiappGET(button_3);
+  GuiappGET(button_4);
+  GuiappGET(button_5);
+  GuiappGET(button_6);
+  GuiappGET(button_7);
+  GuiappGET(button_8);
+  GuiappGET(button_9);
+  GuiappGET(button_0);
+  GuiappGET(button_sub);
+  GuiappGET(button_mult);
+  GuiappGET(button_div);  
   GuiappGET(button_pl);
   GuiappGET(button_exit);
 }
@@ -58,6 +69,158 @@ extern "C" void button_2_clicked(GtkWidget *p_wdgt, gpointer p_data )
   gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
 }
 
+extern "C" void button_3_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=3;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_4_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=4;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_5_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=5;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_6_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=6;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_7_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=7;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_8_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=8;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_9_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=9;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_0_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  int a_d_value=0;
+  if(!clear_f)
+    {
+       a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+       a_d_value = atoi(a_cc_value);
+       a_d_value*=10;
+    }
+  a_d_value+=0;
+  clear_f=false;
+  
+  sprintf(c_cc_value,"%d",a_d_value);
+  
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
 extern "C" void button_pl_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
 {
   const char *a_cc_value;
@@ -85,6 +248,142 @@ extern "C" void button_pl_clicked(GtkWidget *p_wdgt, gpointer p_data )
     }
 
   last_function=0;
+  clear_f = true;
+
+  sprintf(c_cc_value,"%d",operand);
+
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_div_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  double a_d_value;
+  a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+  a_d_value = atoi(a_cc_value);
+  
+  switch (last_function)
+    {
+       case 1:
+	 operand-=a_d_value;
+	 break;
+       case 2:
+	 operand*=a_d_value;
+	 break;
+       case 3:
+	 operand/=a_d_value;
+	 break;
+       case 0:
+	 operand+=a_d_value;
+	 break;
+       default:
+	 break;
+    }
+
+  last_function=3;
+  clear_f = true;
+
+  sprintf(c_cc_value,"%d",operand);
+
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_sub_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  double a_d_value;
+  a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+  a_d_value = atoi(a_cc_value);
+  
+  switch (last_function)
+    {
+       case 1:
+	 operand-=a_d_value;
+	 break;
+       case 2:
+	 operand*=a_d_value;
+	 break;
+       case 3:
+	 operand/=a_d_value;
+	 break;
+       case 0:
+	 operand+=a_d_value;
+	 break;
+       default:
+	 break;
+    }
+
+  last_function=1;
+  clear_f = true;
+
+  sprintf(c_cc_value,"%d",operand);
+
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_mult_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  double a_d_value;
+  a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+  a_d_value = atoi(a_cc_value);
+  
+  switch (last_function)
+    {
+       case 1:
+	 operand-=a_d_value;
+	 break;
+       case 2:
+	 operand*=a_d_value;
+	 break;
+       case 3:
+	 operand/=a_d_value;
+	 break;
+       case 0:
+	 operand+=a_d_value;
+	 break;
+       default:
+	 break;
+    }
+
+  last_function=2;
+  clear_f = true;
+
+  sprintf(c_cc_value,"%d",operand);
+
+  gtk_label_set_text(GTK_LABEL(gui_app->label_result),c_cc_value);
+}
+
+extern "C" void button_equal_clicked(GtkWidget *p_wdgt, gpointer p_data ) 
+{
+  const char *a_cc_value;
+  char c_cc_value[20];
+  double a_d_value;
+  a_cc_value = gtk_label_get_text(GTK_LABEL(gui_app->label_result));
+  a_d_value = atoi(a_cc_value);
+  
+  switch (last_function)
+    {
+       case 1:
+	 operand-=a_d_value;
+	 break;
+       case 2:
+	 operand*=a_d_value;
+	 break;
+       case 3:
+	 operand/=a_d_value;
+	 break;
+       case 0:
+	 operand+=a_d_value;
+	 break;
+       case 4:
+	 break;
+    }
+
+  last_function=4;
   clear_f = true;
 
   sprintf(c_cc_value,"%d",operand);
